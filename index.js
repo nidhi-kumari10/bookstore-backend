@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:5173",
-    "https://bookstore-frontend-1xg5o9hdk-ndbyahut10-5015s-projects.vercel.app"
+    "https://bookstore-frontend-7ibma31my-ndbyahut10-5015s-projects.vercel.app"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
