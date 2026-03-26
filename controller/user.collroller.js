@@ -5,6 +5,7 @@ export const sigup = async (req,res)=>{
 
     try {
    const {fullname, emailId, password} = req.body;
+
       if (!fullname || !emailId || !password) {
       return res.status(400).json({ message: "All fields are required" });
     }
@@ -35,6 +36,7 @@ export const login = async (req, res)=>{
 
     try {
          const {emailId, password} = req.body;
+     
            if (!emailId || !password) {
       return res.status(400).json({ message: "All fields are required" });
     }
