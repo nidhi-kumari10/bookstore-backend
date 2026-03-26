@@ -13,11 +13,7 @@ const app = express();
 
 app.use(express.json());
 app.use(cors({
-  origin: [
-    "http://localhost:5173",
-    "https://bookstore-frontend-7ibma31my-ndbyahut10-5015s-projects.vercel.app"
-  ],
-  methods: ["GET", "POST", "PUT", "DELETE"],
+  origin: true,
   credentials: true
 }));
 const PORT = process.env.PORT || 4001;
